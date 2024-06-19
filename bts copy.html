@@ -1,0 +1,56 @@
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+        <link href="styles.css" rel="stylesheet">
+        <title>Behind the scenes</title>
+    </head>
+    <body class = 'container'>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+
+        <div class = 'border main-border vertical'></div>
+        <div class = 'border title-border horizontal'></div>
+        <header class = 'title '>
+            <div class = 'title-container'>
+                <h1>Making of this site</h1>
+                <div class = 'navlinks btn-group'>
+                    <a href = 'index.html'>Home</a>
+                    <a href = 'about.html'>About</a>
+                    <a href = 'interest.html'>Interests</a>
+                </div>
+            </div>
+        </header>
+
+        <div class = 'free-section'>
+            <h3>A mix of CSS grid and flex</h3>
+            <p>The main structure of the site is made using a grid template. Grid lines are named for ease of reference. <code>minmax(32px, auto)</code> defines the space between the the left/right edges of the site and the vertical lines that borders the content.
+            This space has a minimum width of 32px and grows with the width of the screen. Similarly, the main content area is set to not grow beyond 1280px. Using media query, the left/right margins will be reduced when viewing the site on a narrower screen.</p>
+
+            <pre class = 'pre-scrollable'>
+.container{
+margin: 0 0;
+height: 100%;
+display: grid;
+grid-template-columns: [border-start] minmax(32px, auto) [main-start] minmax(auto, 1280px) [main-end] minmax(32px, auto) [border-end];
+grid-template-rows: [border-start] 100px
+                    [title-start] auto [title-end] var(--section_padding)
+                    [sec1-start] 3fr [sec1-end] var(--section_padding)
+                    [sec2-start] 3fr [sec2-end] var(--section_padding)
+                    100px [border-end];
+}
+@media (max-width: 400px) {
+.container{
+    grid-template-columns: [border-start] 16px [main-start] minmax(auto, 368px) [main-end] 16px [border-end] ;
+    grid-template-rows: [border-start] 100px
+                        [title-start] auto [title-end] var(--section_padding)
+                        [sec1-start] 3fr [sec1-end] var(--section_padding)
+                        [sec2-start] 3fr [sec2-end] var(--section_padding)
+                        100px [border-end];
+
+}
+}
+
+            </pre>
+        </div>
+    </body>
+</html>

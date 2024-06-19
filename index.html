@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/styles.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>My Webpage</title>
+  </head>
+
+  <body class="container">
+    <div class="border main-border vertical"></div>
+    <div class="border sec1-border horizontal"></div>
+    <div class="border title-border horizontal"></div>
+    <div class="border sec2-border horizontal"></div>
+    <header class="title">
+      <div class="title-container">
+        <h1 id="titlename">Jolene</h1>
+        <div class="navlinks btn-group">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </header>
+    <div class="sec1">
+      <!-- heading -->
+      <h2 class="section-heading">Portfolio</h2>
+
+      <!-- items -->
+      <div class="section-body">
+        <div class="section-item">
+          <div class="section-title">
+            <a href="https://viz-influences.onrender.com/"
+              >Network Graph on Data Vis influences
+              <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i
+            ></a>
+          </div>
+          <div class="section-subtitle">
+            Using Data Visualization Society: State of the Industry Survey 2021
+          </div>
+          <ul>
+            <li>Site created with React and deployed using render.com</li>
+            <li>Used d3 Force to create an interactive network graph</li>
+          </ul>
+          Further improvements:
+          <ul>
+            <li>Responsive design to accomodate different screen sizes</li>
+            <li>
+              Use React to handle the rendering and interactivity for shorter
+              loading times
+            </li>
+            <li>Add website links to the respective influences</li>
+            <li>
+              This visualization is complicated and difficult to understand.
+              Respondents' data tools did not have a huge impact on the
+              influences (this can be improved by adjusting stroke width of
+              links to reflect number of mentions of combition of influences).
+              Hence, while aesthetically pleasing, this graph is not as useful
+              as I envisioned it to be.
+            </li>
+          </ul>
+        </div>
+        <div class="section-item">
+          <div class="section-title">
+            <a href="herbist.html"
+              >Analysis of Product Reviews on Herbist
+              <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i
+            ></a>
+          </div>
+          <div class="section-subtitle">
+            Slide Deck for a non-technical audience
+          </div>
+
+          <ul>
+            <li>
+              Herbist: Mobile app that provides a platform for reviewing plant
+              based products (food, clothing, restaurants)
+            </li>
+            <li>
+              Analyzed a dataset that comprises product reviews aggregated from
+              the mobile app
+            </li>
+          </ul>
+          Further improvements:
+          <ul>
+            <li>
+              Parse the review data through an LLM to unpack more insights
+            </li>
+            <li>
+              Perform more market research on other apps/services in the same
+              space to find gaps in the market
+            </li>
+          </ul>
+        </div>
+        <div class="section-item">
+          <div class="section-title">
+            <a href="tableau.html"
+              >Dashboards for FMCG clients
+              <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i
+            ></a>
+          </div>
+          <div class="section-subtitle">
+            Mock ups of Tableau dashboards produced for FMCG clients
+          </div>
+          <ul>
+            <li>
+              Example of Tableau dashboards created for clients (they have been
+              heavily edited for confidential purposes)
+            </li>
+            <li>
+              Clients often request for highly condensed dashboards that allows
+              them to view all the relevant information in a single page.
+            </li>
+            <li>
+              It is necessary to find ways to combine various information (&
+              different graph types) into the same dashboard without making it
+              too cluttered.
+            </li>
+          </ul>
+        </div>
+
+        <div class="section-item">
+          <div class="section-title">
+            <a href="tidytuesday.html"
+              >TidyTuesday Visualizations
+              <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i
+            ></a>
+          </div>
+          <div class="section-subtitle">Made using R ggplot2</div>
+
+          <ul>
+            <li>
+              <a href="https://github.com/rfordatascience/tidytuesday"
+                >#TidyTuesday
+                <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i
+              ></a>
+              is a weekly data challenge where the community explores a new
+              dataset and create visualizations.
+            </li>
+            Further improvements:
+            <ul>
+              <li>
+                Improve readability by increasing font size and using a dark gray that contrasts more with the white background
+              </li>
+            </ul>
+  
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class = 'box1'>a</div>
+        <div class = 'box2'>b</div>
+        <div class = 'box3'>c</div> -->
+
+    <script src="gridcount.js"></script>
+  </body>
+</html>
